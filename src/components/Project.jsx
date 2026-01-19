@@ -11,7 +11,7 @@ const projects = [
     id: 1,
     title: "Modern Family Home",
     category: "Residential",
-    location: "Los Angeles, CA",
+    location: "Sukuta, The Gambia",
     date: "2024",
     description: "Custom 4-bedroom home with smart technology and sustainable features.",
     status: "Completed",
@@ -21,7 +21,7 @@ const projects = [
     id: 2,
     title: "Downtown Office Complex",
     category: "Commercial",
-    location: "New York, NY",
+    location: "Brikama, The Gambia",
     date: "2023",
     description: "15-story commercial building with modern amenities.",
     status: "Completed",
@@ -31,7 +31,7 @@ const projects = [
     id: 3,
     title: "Historic Building Restoration",
     category: "Renovation",
-    location: "Boston, MA",
+    location: "Kanifing, The Gambia",
     date: "2024",
     description: "Complete restoration of 1920s landmark building.",
     status: "Completed",
@@ -41,7 +41,7 @@ const projects = [
     id: 4,
     title: "Luxury Apartment Complex",
     category: "Residential",
-    location: "Miami, FL",
+    location: "Bijilo, The Gambia",
     date: "2023",
     description: "50-unit luxury apartments with ocean views.",
     status: "Completed",
@@ -51,7 +51,7 @@ const projects = [
     id: 5,
     title: "Shopping Center Renovation",
     category: "Renovation",
-    location: "Chicago, IL",
+    location: "Bakau, The Gambia",
     date: "2024",
     description: "Modern upgrade of existing retail space.",
     status: "Completed",
@@ -61,7 +61,7 @@ const projects = [
     id: 6,
     title: "Tech Campus Expansion",
     category: "Commercial",
-    location: "San Francisco, CA",
+    location: "Serrekunda, The Gambia",
     date: "2023",
     description: "New wing for growing tech company headquarters.",
     status: "Completed",
@@ -75,7 +75,7 @@ const projects = [
     : projects.filter(project => project.category === activeFilter);
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white" id='projects'>
       <div className="container mx-auto px-6">
         
         {/* Section Header */}
@@ -170,13 +170,13 @@ const projects = [
                 </div>
 
                 {/* View Details Link */}
-                <a
+                {/* <a
                   href="#"
                   className="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center group"
                 >
                   View Details
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                </a>
+                </a> */}
               </div>
             </div>
           ))}

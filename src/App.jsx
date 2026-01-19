@@ -7,7 +7,7 @@ import Project from './components/Project'
 
 function App() {
   return (
-    <div className="w-full">
+    <div className="w-full" id="home">
       <Navbar />
       <Hero />
       <TrustBar />

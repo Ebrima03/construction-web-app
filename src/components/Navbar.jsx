@@ -20,11 +20,11 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8 backdrop-blur-lg bg-white/10 px-8 py-3 rounded-full border border-white/20 shadow-lg">
-            <a href="/" className="text-white hover:text-blue-200 transition font-medium">Home</a>
-            <a href="/services" className="text-white hover:text-blue-200 transition font-medium">Services</a>
-            <a href="/projects" className="text-white hover:text-blue-200 transition font-medium">Projects</a>
-            <a href="/about" className="text-white hover:text-blue-200 transition font-medium">About</a>
-            <a href="/contact" className="text-white hover:text-blue-200 transition font-medium">Contact</a>
+            <a href="#home" className="text-white hover:text-blue-200 transition font-medium">Home</a>
+            <a href="#services" className="text-white hover:text-blue-200 transition font-medium">Services</a>
+            <a href="#projects" className="text-white hover:text-blue-200 transition font-medium">Projects</a>
+            <a href="#about" className="text-white hover:text-blue-200 transition font-medium">About</a>
+            <a href="#contact" className="text-white hover:text-blue-200 transition font-medium">Contact</a>
           </nav>
 
           {/* CTA Button */}

@@ -33,7 +33,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white" id='about'>
       <div className="container mx-auto px-6">
         
         {/* Section Header */}
