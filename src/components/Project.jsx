@@ -6,69 +6,69 @@ const Project = () => {
   const [activeFilter, setActiveFilter] = useState('All');
 
   const filters = ['All', 'Residential', 'Commercial', 'Renovation'];
+const projects = [
+  {
+    id: 1,
+    title: "Modern Family Home",
+    category: "Residential",
+    location: "Los Angeles, CA",
+    date: "2024",
+    description: "Custom 4-bedroom home with smart technology and sustainable features.",
+    status: "Completed",
+    image: "/images/grid-11.jpg"
+  },
+  {
+    id: 2,
+    title: "Downtown Office Complex",
+    category: "Commercial",
+    location: "New York, NY",
+    date: "2023",
+    description: "15-story commercial building with modern amenities.",
+    status: "Completed",
+    image: "/images/grid-2.jpg"
+  },
+  {
+    id: 3,
+    title: "Historic Building Restoration",
+    category: "Renovation",
+    location: "Boston, MA",
+    date: "2024",
+    description: "Complete restoration of 1920s landmark building.",
+    status: "Completed",
+    image: "/images/IMG-20250422-WA0017.jpg"
+  },
+  {
+    id: 4,
+    title: "Luxury Apartment Complex",
+    category: "Residential",
+    location: "Miami, FL",
+    date: "2023",
+    description: "50-unit luxury apartments with ocean views.",
+    status: "Completed",
+    image: "/images/grid-8.jpg"
+  },
+  {
+    id: 5,
+    title: "Shopping Center Renovation",
+    category: "Renovation",
+    location: "Chicago, IL",
+    date: "2024",
+    description: "Modern upgrade of existing retail space.",
+    status: "Completed",
+    image: "/images/init-5.jpg"
+  },
+  {
+    id: 6,
+    title: "Tech Campus Expansion",
+    category: "Commercial",
+    location: "San Francisco, CA",
+    date: "2023",
+    description: "New wing for growing tech company headquarters.",
+    status: "Completed",
+    image: "/images/grid-1.jpg"
+  }
+];
 
-  const projects = [
-    {
-      id: 1,
-      title: "Modern Family Home",
-      category: "Residential",
-      location: "Los Angeles, CA",
-      date: "2024",
-      description: "Custom 4-bedroom home with smart technology and sustainable features.",
-      status: "Completed",
-      image: "public/images/grid-11.jpg"
-    },
-    {
-      id: 2,
-      title: "Downtown Office Complex",
-      category: "Commercial",
-      location: "New York, NY",
-      date: "2023",
-      description: "15-story commercial building with modern amenities.",
-      status: "Completed",
-      image: "public/images/grid-2.jpg"
-    },
-    {
-      id: 3,
-      title: "Historic Building Restoration",
-      category: "Renovation",
-      location: "Boston, MA",
-      date: "2024",
-      description: "Complete restoration of 1920s landmark building.",
-      status: "Completed",
-      image: "/images/IMG-20250422-WA0017.jpg"
-    },
-    {
-      id: 4,
-      title: "Luxury Apartment Complex",
-      category: "Residential",
-      location: "Miami, FL",
-      date: "2023",
-      description: "50-unit luxury apartments with ocean views.",
-      status: "Completed",
-      image: "public/images/grid-8.jpg"
-    },
-    {
-      id: 5,
-      title: "Shopping Center Renovation",
-      category: "Renovation",
-      location: "Chicago, IL",
-      date: "2024",
-      description: "Modern upgrade of existing retail space.",
-      status: "Completed",
-      image: "public/images/init-5.jpg"
-    },
-    {
-      id: 6,
-      title: "Tech Campus Expansion",
-      category: "Commercial",
-      location: "San Francisco, CA",
-      date: "2023",
-      description: "New wing for growing tech company headquarters.",
-      status: "Completed",
-      image: "/images/grid 1.jpg"
-    }
-  ];
 
   const filteredProjects = activeFilter === 'All' 
     ? projects 
