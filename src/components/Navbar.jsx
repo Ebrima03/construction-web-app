@@ -49,11 +49,11 @@ const Navbar = () => {
         {isOpen && (
           <div className="md:hidden mt-4 bg-white/95 backdrop-blur-lg rounded-2xl p-6 shadow-xl border border-gray-200">
             <nav className="flex flex-col space-y-4">
-              <a href="/" className="text-gray-800 hover:text-blue-600 transition font-medium text-lg">Home</a>
-              <a href="/services" className="text-gray-800 hover:text-blue-600 transition font-medium text-lg">Services</a>
-              <a href="/projects" className="text-gray-800 hover:text-blue-600 transition font-medium text-lg">Projects</a>
-              <a href="/about" className="text-gray-800 hover:text-blue-600 transition font-medium text-lg">About</a>
-              <a href="/contact" className="text-gray-800 hover:text-blue-600 transition font-medium text-lg">Contact</a>
+              <a href="#home" className="text-gray-800 hover:text-blue-600 transition font-medium text-lg">Home</a>
+              <a href="#services" className="text-gray-800 hover:text-blue-600 transition font-medium text-lg">Services</a>
+              <a href="#projects" className="text-gray-800 hover:text-blue-600 transition font-medium text-lg">Projects</a>
+              <a href="#about" className="text-gray-800 hover:text-blue-600 transition font-medium text-lg">About</a>
+              <a href="#contact" className="text-gray-800 hover:text-blue-600 transition font-medium text-lg">Contact</a>
               <a
                 href="/get-quote"
                 className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition text-center"
