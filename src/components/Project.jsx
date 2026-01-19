@@ -16,7 +16,7 @@ const Project = () => {
       date: "2024",
       description: "Custom 4-bedroom home with smart technology and sustainable features.",
       status: "Completed",
-      image: '/public/images/gid 2.jpg'
+      image: "/images/grid 2.jpg"
     },
     {
       id: 2,
@@ -26,7 +26,7 @@ const Project = () => {
       date: "2023",
       description: "15-story commercial building with modern amenities.",
       status: "Completed",
-      image: "/public/images/grid 2.jpg"
+      image: "/images/grid 2.jpg"
     },
     {
       id: 3,
@@ -36,7 +36,7 @@ const Project = () => {
       date: "2024",
       description: "Complete restoration of 1920s landmark building.",
       status: "Completed",
-      image: "/public/images/IMG-20250422-WA0017.jpg"
+      image: "/images/IMG-20250422-WA0017.jpg"
     },
     {
       id: 4,
@@ -46,7 +46,7 @@ const Project = () => {
       date: "2023",
       description: "50-unit luxury apartments with ocean views.",
       status: "Completed",
-      image: "/public/images/grid 7.jpg"
+      image: "/images/grid 7.jpg"
     },
     {
       id: 5,
@@ -56,7 +56,7 @@ const Project = () => {
       date: "2024",
       description: "Modern upgrade of existing retail space.",
       status: "Completed",
-      image: "/public/images/init 5.jpg"
+      image: "/images/init 5.jpg"
     },
     {
       id: 6,
@@ -66,7 +66,7 @@ const Project = () => {
       date: "2023",
       description: "New wing for growing tech company headquarters.",
       status: "Completed",
-      image: "/public/images/grid 1.jpg"
+      image: "/images/grid 1.jpg"
     }
   ];
 
