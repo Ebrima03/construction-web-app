@@ -16,7 +16,7 @@ const Project = () => {
       date: "2024",
       description: "Custom 4-bedroom home with smart technology and sustainable features.",
       status: "Completed",
-      image: "/images/grid 2.jpg"
+      image: "public/images/grid-11.jpg"
     },
     {
       id: 2,
@@ -26,7 +26,7 @@ const Project = () => {
       date: "2023",
       description: "15-story commercial building with modern amenities.",
       status: "Completed",
-      image: "/images/grid 2.jpg"
+      image: "public/images/grid-2.jpg"
     },
     {
       id: 3,
@@ -46,7 +46,7 @@ const Project = () => {
       date: "2023",
       description: "50-unit luxury apartments with ocean views.",
       status: "Completed",
-      image: "/images/grid 7.jpg"
+      image: "public/images/grid-8.jpg"
     },
     {
       id: 5,
@@ -56,7 +56,7 @@ const Project = () => {
       date: "2024",
       description: "Modern upgrade of existing retail space.",
       status: "Completed",
-      image: "/images/init 5.jpg"
+      image: "public/images/init-5.jpg"
     },
     {
       id: 6,
