@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowRight, MapPin, Calendar, CheckCircle } from 'lucide-react';
 
+
 const Project = () => {
   const [activeFilter, setActiveFilter] = useState('All');
 
@@ -15,7 +16,7 @@ const Project = () => {
       date: "2024",
       description: "Custom 4-bedroom home with smart technology and sustainable features.",
       status: "Completed",
-      image: "@/assets/images/gid 2.jpg"
+      image: '/public/images/gid 2.jpg'
     },
     {
       id: 2,
@@ -25,7 +26,7 @@ const Project = () => {
       date: "2023",
       description: "15-story commercial building with modern amenities.",
       status: "Completed",
-      image: "bg-gradient-to-br from-slate-400 to-slate-600"
+      image: "/public/images/grid 2.jpg"
     },
     {
       id: 3,
@@ -35,7 +36,7 @@ const Project = () => {
       date: "2024",
       description: "Complete restoration of 1920s landmark building.",
       status: "Completed",
-      image: "bg-gradient-to-br from-amber-400 to-amber-600"
+      image: "/public/images/IMG-20250422-WA0017.jpg"
     },
     {
       id: 4,
@@ -45,7 +46,7 @@ const Project = () => {
       date: "2023",
       description: "50-unit luxury apartments with ocean views.",
       status: "Completed",
-      image: "bg-gradient-to-br from-teal-400 to-teal-600"
+      image: "/public/images/grid 7.jpg"
     },
     {
       id: 5,
@@ -55,7 +56,7 @@ const Project = () => {
       date: "2024",
       description: "Modern upgrade of existing retail space.",
       status: "Completed",
-      image: "bg-gradient-to-br from-purple-400 to-purple-600"
+      image: "/public/images/init 5.jpg"
     },
     {
       id: 6,
@@ -65,7 +66,7 @@ const Project = () => {
       date: "2023",
       description: "New wing for growing tech company headquarters.",
       status: "Completed",
-      image: "bg-gradient-to-br from-emerald-400 to-emerald-600"
+      image: "/public/images/grid 1.jpg"
     }
   ];
 
@@ -115,15 +116,29 @@ const Project = () => {
               className="bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 group hover:-translate-y-2"
             >
               {/* Project Image Placeholder */}
-              <div className={`h-64 ${project.image} flex items-center justify-center relative overflow-hidden`}>
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all"></div>
-                <div className="relative z-10 text-center text-white">
-                  <div className="bg-white/20 backdrop-blur-md rounded-full px-4 py-2 inline-flex items-center">
-                    <CheckCircle className="w-5 h-5 mr-2" />
-                    <span className="font-semibold">{project.status}</span>
-                  </div>
-                </div>
-              </div>
+              <div className="h-64 relative overflow-hidden">
+  {project.image ? (
+    <img
+      src={project.image}
+      alt={project.title}
+      className="w-full h-full object-cover"
+    />
+  ) : (
+    <div className={`w-full h-full ${project.bgClass}`} />
+  )}
+
+  {/* overlay */}
+  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all"></div>
+
+  {/* status badge */}
+  <div className="absolute inset-0 flex items-center justify-center z-10">
+    <div className="bg-white/20 backdrop-blur-md rounded-full px-4 py-2 inline-flex items-center text-white">
+      <CheckCircle className="w-5 h-5 mr-2" />
+      <span className="font-semibold">{project.status}</span>
+    </div>
+  </div>
+</div>
+
 
               {/* Project Details */}
               <div className="p-6">

@@ -1,4 +1,4 @@
-import BgImage from "@/assets/images/illustration-construction-site.jpg"
+import BgImage from "/public/images/illustration-construction-site.jpg"
 
 const Hero = () => {
   const stats = [

@@ -2,7 +2,7 @@ import { Menu, X } from 'lucide-react';
 import React from 'react';
 
 // Import your images
-import Logo from "@/assets/images/WhatsApp Image 2025-03-20 at 15.57.56_a0f98db0.jpg"
+import Logo from "/public/images/WhatsApp Image 2025-03-20 at 15.57.56_a0f98db0.jpg"
 
 
 const Navbar = () => {
