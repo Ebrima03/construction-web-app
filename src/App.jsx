@@ -4,6 +4,7 @@ import TrustBar from './components/Trust-bar'
 import Service from './components/Service'
 import AboutUs from './components/About'
 import Project from './components/Project'
+import Contact from './components/Contact'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Service />
       <AboutUs />
       <Project />
+      <Contact />
     </div>
   )
 }

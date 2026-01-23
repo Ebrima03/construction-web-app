@@ -38,7 +38,7 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-white bg-white/10 backdrop-blur-md p-2 rounded-lg border border-white/20"
+            className="md:hidden text-blue-400 bg-white/10 backdrop-blur-md p-2 rounded-lg border border-white/20"
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
