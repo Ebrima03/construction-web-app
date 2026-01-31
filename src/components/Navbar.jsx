@@ -52,10 +52,10 @@ const Navbar = () => {
 
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled
-            ? 'bg-gray-900/80 backdrop-blur-xl shadow-lg'
-            : 'bg-transparent'
-        }`}
+  isScrolled
+    ? 'md:bg-gray-900/80 md:backdrop-blur-xl md:shadow-lg bg-transparent'
+    : 'bg-transparent'
+}`}
       >
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
@@ -106,7 +106,7 @@ const Navbar = () => {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden text-white bg-white/10 backdrop-blur-md p-2 rounded-lg border border-white/20 hover:bg-white/20 transition"
+              className="md:hidden text-blue-600 bg-white/10 backdrop-blur-md p-2 rounded-lg border border-white/20 hover:bg-white/20 transition"
               aria-label={isOpen ? 'Close menu' : 'Open menu'}
               aria-expanded={isOpen}
             >
